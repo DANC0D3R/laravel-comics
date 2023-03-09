@@ -1,0 +1,137 @@
+footer{
+    // BLU MENU
+    .blue-menu{
+        padding: 3rem;
+
+        background-color: #1E90FF;
+        .container{
+            width: 70%;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            
+            list-style: none;
+            li a{
+                display: flex;
+                align-items: center;
+
+                text-transform: uppercase;
+                text-decoration: none;
+
+                color: #FFFFFF; 
+                img{
+                    max-width: 65px;
+                    height: 60px;
+                    
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+    // LINKS
+    .jumbo-bg{
+        height: 300px;
+
+        background-image: url(/resources/img/footer-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        color: #FFFFFF;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+
+            height: 100%;
+
+            .col{
+                padding: 40px 20px;
+
+                h3{
+                    margin-bottom: 5px;
+
+                    text-transform: uppercase;
+                }
+                ul{
+                    margin-bottom: 10px;
+
+                    list-style-type: none;
+
+                    li{
+                        font-size: 12px;
+                        
+                        color: #808080;
+                    }
+                }
+            }
+            figure{
+                width: 450px;
+                height: 100%;
+
+                overflow: hidden;
+
+                img{
+                    transform: translateY(-17%);
+
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+    }
+    // SOCIAL
+    .gray-bg{
+        padding: 30px 0;
+
+        background-color: #3C3C3C;
+
+        .container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{
+                padding: 10px;
+
+                border: 3px solid #1E90FF;
+
+                font-size: 20px;
+
+                color: #FFFFFF;
+                background-color: rgba(#000000, 0);
+
+                cursor: pointer;
+            }
+            div{
+                display: flex;
+                align-items: center;
+
+                a{
+                    margin-right: 10px;
+
+                    font-size: 25px;
+                    font-weight: bold;
+
+                    color: #1E90FF;
+
+                    text-decoration: none;
+                }
+                ul{
+                    display: flex;
+
+                    list-style-type: none;
+
+                    li{
+                        margin: 0 10px;
+
+                        img{
+                            width: auto;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

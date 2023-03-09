@@ -1,0 +1,50 @@
+header{
+    height: 150px;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 100%;
+        
+        // LOGO
+        figure{
+            height: 90px;
+
+            a{
+                height: 100%;
+
+                img{
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+        // NAVBAR
+        nav ul{
+            display: flex;
+            list-style-type: none;
+
+            height: 100%;
+
+            li{
+                display: flex;
+                align-items: center;
+                
+                height: 100%;
+
+                padding: 0 12px;
+
+                a{
+                    font-size: 22px;
+                    font-weight: bold;
+
+                    color: #000000;
+
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
