@@ -1,22 +1,26 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="author" content="Daniele Minieri">
-        <title>Laravel Comics</title>
-
-        {{-- Font --}}
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-        
-        @vite('resources/js/app.js')
-    </head>
-    <body>
-        @include('includes.header')
-        @include('includes.main')
-        @include('includes.footer')
-    </body>
-</html>
+@extends('layout')
+@section('main')
+    {{-- JUMBOTRON --}}
+    <div class="jumbo">
+        <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="Jumbotron">
+    </div>
+    {{-- CARD BOX --}}
+    <div class="container">
+        <h2>Current series</h2>
+        {{-- CARDS --}}
+        <div class="card-section">
+            @foreach ($comics as $comic)
+            <div class="card">
+                <figure>
+                    <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
+                    <figcaption>{{ $comic['series'] }}</figcaption>
+                </figure>
+            </div>
+            @endforeach
+        </div>
+        {{-- BUTTON --}}
+        <div class="text-center">
+            <button>Load More</button>
+        </div>
+    </div>
+@endsection

@@ -1,0 +1,23 @@
+.single-card{
+    width: calc(100% / 6);
+
+    padding: 10px;
+
+    figure{
+        img{
+            width: 80%;
+            height: 400px;
+
+            object-position: top;
+            object-fit: cover;
+        }
+        figcaption{
+            margin: 10px 0;
+
+            font-size: 16px;
+            text-transform: uppercase;
+
+            color: #FFFFFF;
+        }
+    }
+}
