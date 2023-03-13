@@ -15,6 +15,7 @@
                     <img src="{{ $comic['thumb'] }}" alt="{{ $comic['series'] }}">
                     <figcaption>{{ $comic['series'] }}</figcaption>
                 </figure>
+                <button class="btn-primary"><a href="{{ route('comic') }}">Dettagli</a></button>
             </div>
             @endforeach
         </div>
